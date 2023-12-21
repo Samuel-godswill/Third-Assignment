@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--color);
+}
+body {
+  background-color: #f5f8fa;
+  font-family: "Lato", sans-serif;
+}
+:root {
+  --color: #1d2c3c;
+  --border: #e0e6ea;
+  --sidebar: #1179bf;
+  --input: #edeff2;
+  --inputcolor: #646e7a;
+}
+.bg {
+  width: 100vw;
+  height: 100vh;
+}
+.nav {
+  max-width: 1200px;
+  height: 73px;
+  margin: 0 auto;
+  margin-top: 28px;
+  display: flex;
+  /* background-color: #ccc; */
+  border-bottom: 2px solid var(--border);
+  gap: 35.9rem;
+}
+.nav .navLogo {
+  width: 200px;
+  height: 39px;
+}
+.navLogo img {
+  height: 100%;
+  width: 100%;
+}
+.navLinks {
+  margin-top: -4vh;
+}
+.navLinks a {
+  margin-left: 19px;
+  text-decoration: none;
+  color: var(--color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.navLinks button {
+  margin-left: 19px;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--color);
+  background-color:  #f5f8fa;
+  color: #1d2c3c;
+}
+
+.container {
+  display: flex;
+  width: 820px;
+  height: 650px;
+  margin: 0 auto;
+  margin-top: 2vh;
+}
+.leftbar {
+  width: 550px;
+  height: 650px;
+  background-color: #fff;
+  padding: 40px;
+}
+.leftbar .title {
+  height: 60px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  border-bottom: 2px solid var(--border);
+  /* text-shadow: 2px 5px 40px var(--color); */
+  /* width: 540px; */
+}
+.section-basic {
+  height: 221px;
+  margin-top: 25px;
+  border-bottom: 2px solid var(--border);
+}
+.paragraph {
+  display: flex;
+  font-size: 18px;
+  font-weight: 540;
+  line-height: 21.6px;
+  letter-spacing: -0.16px;
+  text-transform: capitalize;
+}
+.paragraph object {
+  border: 2px solid var(--sidebar);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+}
+.section-basic {
+  border-bottom: 2px solid var(--border);
+  height: 200px;
+}
+.name {
+  display: flex;
+  gap: 15px;
+}
+.name .firstname {
+  height: 60px;
+  width: 227px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.firstname label {
+  font-weight: 300px;
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-bottom: 7px;
+}
+.firstname input {
+  height: 36px;
+  width: 187px;
+  background-color: var(--input);
+  color: var(--inputcolor);
+  font-size: 12px;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: none;
+}
+
+.name .lastname {
+  height: 60px;
+  width: 227px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.lastname label {
+  font-weight: 300px;
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-bottom: 7px;
+}
+.lastname input {
+  height: 36px;
+  width: 187px;
+  background-color: var(--input);
+  color: var(--inputcolor);
+  font-size: 12px;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: none;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  width: 370px;
+  margin-top: 10px;
+}
+.email label {
+  font-weight: 300px;
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-bottom: 7px;
+}
+.email input {
+  height: 36px;
+  width: 310px;
+  background-color: var(--input);
+  color: var(--inputcolor);
+  font-size: 12px;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: none;
+}
+.section-payment {
+  margin-top: 30px;
+  border-bottom: 2px solid var(--border);
+}
+.section-payment .credit-card {
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.credit-card label {
+  font-weight: 300px;
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-bottom: 7px;
+}
+.credit-card input {
+  height: 36px;
+  width: 80px;
+  background-color: var(--input);
+  color: var(--inputcolor);
+  font-size: 12px;
+  padding: 0 20px;
+  border: none;
+}
+button {
+  border: none;
+  width: 470px;
+  padding: 13px 0;
+  margin-top: 30px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #047449;
+}
+.purchase{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  /* width: 470px; */
+}
+.purchase object{
+  border: 2px solid var(--sidebar);
+  height: 13px;
+  width: 13px;
+  font-size: 13px;
+  line-height: 16.8px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 7px;
+  margin-top: -15px;
+}
+.purchase p{
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.purchase p span{
+  display: block;
+}
+.container .sidebar {
+  width: 220px;
+  border-radius: 0px 6px 6px 0px;
+  height: 650px;
+  background-color: var(--sidebar);
+  padding: 40px;
+}
+.plan .pricing{
+  color: #fff;
+  font-family: avenir;
+  /* font-weight: 10; */
+  font-size: 50px;
+  margin-top: 20px;
+}
+.plan .pricing sup{
+  color: #fff;
+  font-weight: 10;
+  font-size: 15px;
+  margin-right: -5px;
+}
+.plan .pricing sub{
+  font-weight: 10;
+  font-size: 14px;
+}
+.plan .auto{
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 25px;
+}
+.auto span{
+  display: flex;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.details{
+  margin-top: 30px;
+}
+.details .i{
+  display: flex;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.i{
+  margin-bottom: 20px;
+}
+.i object{
+  color: #a2cee8;
+  border: 2px solid #a2cee8;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+}
+.switch{
+  /* margin-top: 20px; */
+}
+.switch p{
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.parent{
+  margin-top: 35px;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.parent i{
+  font-size: 14px;
+  line-height: 16.8px;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.parent i span{
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.h{
+  display: flex;
+  margin-top: 20px;
+}
+.parent .image{
+  width: 30px;
+  height: 30px;
+  margin: 0 15px 0 0;
+}
+.image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.imagetext p{
+  margin-top: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+/* .sidebar .plan {
+  color: #fff;
+}
+.plan p {
+  color: #fff;
+}
+.plan .pricing sup {
+  color: #fff;
+  font-weight: 10;
+  font-size: 18px;
+  margin-right: -5px;
+}
+.plan .pricing {
+  color: #fff;
+  font-family: avenir;
+  font-weight: 10;
+  font-size: 50px;
+  margin-top: 2px;
+}
+.pricing sub {
+  color: #fff;
+  font-weight: 10;
+  font-size: 18px;
+  margin-left: -10px;
+} */
